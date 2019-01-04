@@ -1,0 +1,7 @@
+Direction,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,participant,session,date,expName,psychopyVersion,frameRate,
+Right.wav,0,0,0,3,,001,2018_Dec_24_1101,audio,1.85.2,59.80859741898475,
+Up.wav,0,1,1,1,,001,2018_Dec_24_1101,audio,1.85.2,59.80859741898475,
+Down.wav,0,2,2,0,,001,2018_Dec_24_1101,audio,1.85.2,59.80859741898475,
+Left.wav,0,3,3,2,,001,2018_Dec_24_1101,audio,1.85.2,59.80859741898475,
+Up.wav,1,0,4,1,,001,2018_Dec_24_1101,audio,1.85.2,59.80859741898475,
+Right.wav,1,1,5,3,,001,2018_Dec_24_1101,audio,1.85.2,59.80859741898475,

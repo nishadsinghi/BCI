@@ -1,0 +1,91 @@
+9.5872 	WARNING 	User requested fullscreen with size [1366  768], but screen is actually [1440, 900]. Using actual size
+10.3650 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color='black', colorSpace='named', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x1294dfcf8>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x129d4b048>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1440,  900]), stereo=False, units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.3651 	EXP 	window1: recordFrameIntervals = False
+10.5310 	EXP 	window1: recordFrameIntervals = True
+10.7165 	EXP 	window1: recordFrameIntervals = False
+10.9030 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='norm', win=Window(...), wrapWidth=1)
+10.9067 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.282, 0.5  ]), texRes=128, units='norm', win=Window(...))
+11.0509 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='fixationCross.png', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.141, 0.25 ]), texRes=128, units='norm', win=Window(...))
+11.0662 	EXP 	text_2: autoDraw = True
+12.0656 	EXP 	Imported direction.xlsx as conditions, 4 conditions, 1 params
+12.0661 	EXP 	Created sequence: random, trialTypes=4, nReps=10, seed=None
+12.0664 	EXP 	New trial (rep=0, index=0): OrderedDict([('Direction', 'Up.png')])
+12.1187 	EXP 	text_2: autoDraw = False
+12.1187 	EXP 	image: image = 'Up.png'
+12.1187 	EXP 	image: autoDraw = True
+15.0777 	EXP 	image: autoDraw = False
+15.0777 	EXP 	image_2: autoDraw = True
+17.4344 	EXP 	New trial (rep=0, index=1): OrderedDict([('Direction', 'Left.png')])
+17.4674 	EXP 	image_2: autoDraw = False
+17.4674 	EXP 	image_2: autoDraw = False
+17.4674 	EXP 	image: image = 'Left.png'
+17.4674 	EXP 	image: autoDraw = True
+20.4416 	EXP 	image: autoDraw = False
+20.4416 	EXP 	image: autoDraw = False
+20.4416 	EXP 	image_2: autoDraw = True
+22.5995 	EXP 	New trial (rep=0, index=2): OrderedDict([('Direction', 'Down.png')])
+22.6472 	EXP 	image_2: autoDraw = False
+22.6472 	EXP 	image_2: autoDraw = False
+22.6472 	EXP 	image: image = 'Down.png'
+22.6472 	EXP 	image: autoDraw = True
+25.6054 	EXP 	image: autoDraw = False
+25.6054 	EXP 	image: autoDraw = False
+25.6054 	EXP 	image_2: autoDraw = True
+27.7950 	EXP 	New trial (rep=0, index=3): OrderedDict([('Direction', 'Right.png')])
+27.8287 	EXP 	image_2: autoDraw = False
+27.8287 	EXP 	image_2: autoDraw = False
+27.8287 	EXP 	image: image = 'Right.png'
+27.8287 	EXP 	image: autoDraw = True
+30.8025 	EXP 	image: autoDraw = False
+30.8025 	EXP 	image: autoDraw = False
+30.8025 	EXP 	image_2: autoDraw = True
+33.0432 	EXP 	New trial (rep=1, index=0): OrderedDict([('Direction', 'Right.png')])
+33.0952 	EXP 	image_2: autoDraw = False
+33.0952 	EXP 	image_2: autoDraw = False
+33.0952 	EXP 	image: image = 'Right.png'
+33.0952 	EXP 	image: autoDraw = True
+36.0500 	EXP 	image: autoDraw = False
+36.0500 	EXP 	image: autoDraw = False
+36.0500 	EXP 	image_2: autoDraw = True
+38.3741 	EXP 	New trial (rep=1, index=1): OrderedDict([('Direction', 'Down.png')])
+38.4076 	EXP 	image_2: autoDraw = False
+38.4076 	EXP 	image_2: autoDraw = False
+38.4076 	EXP 	image: image = 'Down.png'
+38.4076 	EXP 	image: autoDraw = True
+41.3804 	EXP 	image: autoDraw = False
+41.3804 	EXP 	image: autoDraw = False
+41.3804 	EXP 	image_2: autoDraw = True
+43.3871 	EXP 	New trial (rep=1, index=2): OrderedDict([('Direction', 'Left.png')])
+43.4202 	EXP 	image_2: autoDraw = False
+43.4202 	EXP 	image_2: autoDraw = False
+43.4202 	EXP 	image: image = 'Left.png'
+43.4202 	EXP 	image: autoDraw = True
+46.3941 	EXP 	image: autoDraw = False
+46.3941 	EXP 	image: autoDraw = False
+46.3941 	EXP 	image_2: autoDraw = True
+48.4010 	EXP 	New trial (rep=1, index=3): OrderedDict([('Direction', 'Up.png')])
+48.4332 	EXP 	image_2: autoDraw = False
+48.4332 	EXP 	image_2: autoDraw = False
+48.4332 	EXP 	image: image = 'Up.png'
+48.4332 	EXP 	image: autoDraw = True
+51.4081 	EXP 	image: autoDraw = False
+51.4081 	EXP 	image: autoDraw = False
+51.4081 	EXP 	image_2: autoDraw = True
+53.8316 	EXP 	New trial (rep=2, index=0): OrderedDict([('Direction', 'Down.png')])
+53.8640 	EXP 	image_2: autoDraw = False
+53.8640 	EXP 	image_2: autoDraw = False
+53.8640 	EXP 	image: image = 'Down.png'
+53.8640 	EXP 	image: autoDraw = True
+56.8383 	EXP 	image: autoDraw = False
+56.8383 	EXP 	image: autoDraw = False
+56.8383 	EXP 	image_2: autoDraw = True
+59.0637 	EXP 	New trial (rep=2, index=1): OrderedDict([('Direction', 'Up.png')])
+59.0962 	EXP 	image_2: autoDraw = False
+59.0962 	EXP 	image_2: autoDraw = False
+59.0962 	EXP 	image: image = 'Up.png'
+59.0962 	EXP 	image: autoDraw = True
+62.0705 	EXP 	image: autoDraw = False
+62.0705 	EXP 	image: autoDraw = False
+62.0705 	EXP 	image_2: autoDraw = True
+64.0495 	DATA 	Keypress: escape
+64.3305 	EXP 	window1: mouseVisible = True

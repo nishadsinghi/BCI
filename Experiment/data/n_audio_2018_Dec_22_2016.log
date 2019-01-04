@@ -1,0 +1,50 @@
+9.6589 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1440, 900]. Using actual size
+10.4050 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x125094e10>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x12a209320>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1440,  900]), stereo=False, units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.4051 	EXP 	window1: recordFrameIntervals = False
+10.5714 	EXP 	window1: recordFrameIntervals = True
+10.7557 	EXP 	window1: recordFrameIntervals = False
+10.9388 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='norm', win=Window(...), wrapWidth=1)
+10.9929 	EXP 	Sound  set volume 1.000
+10.9942 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='norm', win=Window(...), wrapWidth=1)
+11.0000 	EXP 	Sound  set volume 1.000
+11.0008 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='norm', win=Window(...), wrapWidth=1)
+11.0389 	EXP 	text: autoDraw = True
+12.0095 	EXP 	Imported audio.xlsx as conditions, 4 conditions, 1 params
+12.0102 	EXP 	Created sequence: random, trialTypes=4, nReps=5, seed=None
+12.0108 	EXP 	New trial (rep=0, index=0): OrderedDict([('Direction', 'Down.wav')])
+12.0246 	EXP 	text: autoDraw = False
+12.0246 	EXP 	text: autoDraw = False
+12.7770 	EXP 	text_2: autoDraw = True
+15.7684 	EXP 	text_2: autoDraw = False
+15.7684 	EXP 	text_2: autoDraw = False
+15.7684 	EXP 	text_3: autoDraw = True
+17.9415 	EXP 	New trial (rep=0, index=1): OrderedDict([('Direction', 'Right.wav')])
+17.9581 	EXP 	text_3: autoDraw = False
+17.9581 	EXP 	text_3: autoDraw = False
+18.7095 	EXP 	text_2: autoDraw = True
+21.7012 	EXP 	text_2: autoDraw = False
+21.7012 	EXP 	text_2: autoDraw = False
+21.7012 	EXP 	text_3: autoDraw = True
+23.7569 	EXP 	New trial (rep=0, index=2): OrderedDict([('Direction', 'Up.wav')])
+23.7727 	EXP 	text_3: autoDraw = False
+23.7727 	EXP 	text_3: autoDraw = False
+24.4750 	EXP 	text_2: autoDraw = True
+27.4663 	EXP 	text_2: autoDraw = False
+27.4663 	EXP 	text_2: autoDraw = False
+27.4663 	EXP 	text_3: autoDraw = True
+29.9080 	EXP 	New trial (rep=0, index=3): OrderedDict([('Direction', 'Left.wav')])
+29.9233 	EXP 	text_3: autoDraw = False
+29.9233 	EXP 	text_3: autoDraw = False
+30.6746 	EXP 	text_2: autoDraw = True
+33.6658 	EXP 	text_2: autoDraw = False
+33.6658 	EXP 	text_2: autoDraw = False
+33.6658 	EXP 	text_3: autoDraw = True
+35.9231 	EXP 	New trial (rep=1, index=0): OrderedDict([('Direction', 'Right.wav')])
+35.9384 	EXP 	text_3: autoDraw = False
+35.9384 	EXP 	text_3: autoDraw = False
+36.6907 	EXP 	text_2: autoDraw = True
+39.6817 	EXP 	text_2: autoDraw = False
+39.6817 	EXP 	text_2: autoDraw = False
+39.6817 	EXP 	text_3: autoDraw = True
+40.4375 	DATA 	Keypress: escape
+40.7174 	EXP 	window1: mouseVisible = True
