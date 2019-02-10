@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b12),
-    on Mon Jan 28 12:35:16 2019
+    on Mon Jan 28 12:35:47 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -20,6 +20,9 @@ from numpy import (sin, cos, tan, log, log10, pi, average,
 from numpy.random import random, randint, normal, shuffle
 import os  # handy system and path functions
 import sys  # to get file system encoding
+
+try:    from ctypes import windll
+    global io    io = windll.dlportio # requires dlportio.dll !!!    print('Parallel port open\n')except:    print('The parallel port couldn\'t be opened\n')
 
 # Ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
@@ -42,7 +45,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/nishadsinghi/Google Drive/BCI Project/Drone Control/Experiment/visual_lastrun.py',
+    originPath='/Users/nishadsinghi/Google Drive/BCI Project/Drone Control/Experiment/visual.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -171,7 +174,17 @@ for thisTrial in trials:
     if thisTrial != None:
         for paramName in thisTrial:
             exec('{} = thisTrial[paramName]'.format(paramName))
+
+#    Timestamp = datetime.datetime.now().time()
     
+    if Direction == 'Up.png':
+        trig = 1
+    elif Direction == 'Down.png':
+        trig = 2
+    elif Direction == 'Left.png':
+        trig = 3
+    else:
+        trig = 4    try:    #io.DlPortWritePortUchar(port, trigger)        windll.inpout32.Out32(0x0000D100, trig)        print ('Trigger %d', Direction)        #winsound.Beep(1*1000,10)        win.flip()        core.wait(0.01) # Change this#        Timestamp = datetime.datetime.now().time()#        TrigTStamp = TrigTStamp +'    %s'%(Timestamp)        windll.inpout32.Out32(0x0000D100, 0)        #core.wait(0.05 )    except:        print('Error sending trigger', Direction)
     # ------Prepare to start Routine "trial"-------
     t = 0
     trialClock.reset()  # clock

@@ -1,0 +1,49 @@
+20.8609 	WARNING 	User requested fullscreen with size [1366  768], but screen is actually [1440, 900]. Using actual size
+21.8367 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color='black', colorSpace='named', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x126fc1c88>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x12a80e0f0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1440,  900]), stereo=False, units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+21.8367 	EXP 	window1: recordFrameIntervals = False
+22.0005 	EXP 	window1: recordFrameIntervals = True
+22.1851 	EXP 	window1: recordFrameIntervals = False
+22.4355 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='norm', win=Window(...), wrapWidth=1)
+22.4588 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.282, 0.5  ]), texRes=128, units='norm', win=Window(...))
+22.6050 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='fixationCross.png', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.141, 0.25 ]), texRes=128, units='norm', win=Window(...))
+22.6352 	EXP 	text_2: autoDraw = True
+29.6294 	EXP 	Imported direction.xlsx as conditions, 4 conditions, 1 params
+29.6330 	EXP 	Created sequence: random, trialTypes=4, nReps=25, seed=None
+29.6338 	EXP 	New trial (rep=0, index=0): OrderedDict([('Direction', 'Down.png')])
+29.6877 	EXP 	text_2: autoDraw = False
+29.6877 	EXP 	text_2: autoDraw = False
+29.6877 	EXP 	image: image = 'Down.png'
+29.6877 	EXP 	image: autoDraw = True
+33.6319 	EXP 	image: autoDraw = False
+33.6319 	EXP 	image_2: autoDraw = True
+36.6913 	EXP 	New trial (rep=0, index=1): OrderedDict([('Direction', 'Right.png')])
+36.7231 	EXP 	image_2: autoDraw = False
+36.7231 	EXP 	image_2: autoDraw = False
+36.7231 	EXP 	image: image = 'Right.png'
+36.7231 	EXP 	image: autoDraw = True
+40.7008 	EXP 	image: autoDraw = False
+40.7008 	EXP 	image: autoDraw = False
+40.7008 	EXP 	image_2: autoDraw = True
+44.1107 	EXP 	New trial (rep=0, index=2): OrderedDict([('Direction', 'Up.png')])
+44.1434 	EXP 	image_2: autoDraw = False
+44.1434 	EXP 	image_2: autoDraw = False
+44.1434 	EXP 	image: image = 'Up.png'
+44.1434 	EXP 	image: autoDraw = True
+48.1211 	EXP 	image: autoDraw = False
+48.1211 	EXP 	image: autoDraw = False
+48.1211 	EXP 	image_2: autoDraw = True
+51.4305 	EXP 	New trial (rep=0, index=3): OrderedDict([('Direction', 'Left.png')])
+51.4631 	EXP 	image_2: autoDraw = False
+51.4631 	EXP 	image_2: autoDraw = False
+51.4631 	EXP 	image: image = 'Left.png'
+51.4631 	EXP 	image: autoDraw = True
+55.4397 	EXP 	image: autoDraw = False
+55.4397 	EXP 	image: autoDraw = False
+55.4397 	EXP 	image_2: autoDraw = True
+58.8665 	EXP 	New trial (rep=1, index=0): OrderedDict([('Direction', 'Left.png')])
+58.8999 	EXP 	image_2: autoDraw = False
+58.8999 	EXP 	image_2: autoDraw = False
+58.8999 	EXP 	image: image = 'Left.png'
+58.8999 	EXP 	image: autoDraw = True
+59.3617 	DATA 	Keypress: escape
+59.6777 	EXP 	window1: mouseVisible = True

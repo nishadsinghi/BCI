@@ -1,0 +1,4 @@
+Direction,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,session,participant,date,expName,psychopyVersion,frameRate,
+Down.png,0,0,0,0,001,,2019_Jan_23_1620,untitled,1.85.2,59.77708288866015,
+Right.png,0,1,1,3,001,,2019_Jan_23_1620,untitled,1.85.2,59.77708288866015,
+Up.png,0,2,2,1,001,,2019_Jan_23_1620,untitled,1.85.2,59.77708288866015,

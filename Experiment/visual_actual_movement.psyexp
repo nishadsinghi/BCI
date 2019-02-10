@@ -111,7 +111,7 @@
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="7" valType="code"/>
-        <Param name="text" updates="constant" val="Welcome! Please react to the cues (arrows) as follows:&amp;#10;&amp;#10;- Left Arrow: IMAGINE moving left hand&amp;#10;- Right Arrow: IMAGINE moving right hand&amp;#10;- Up Arrow: IMAGINE moving both hands&amp;#10;- Down Arrow: IMAGINE both hands at rest&amp;#10;" valType="str"/>
+        <Param name="text" updates="constant" val="Welcome! Please react to the cues (arrows) as follows:&amp;#10;&amp;#10;- Left Arrow: MOVE moving left hand&amp;#10;- Right Arrow: MOVE moving right hand&amp;#10;- Up Arrow: MOVE moving both hands&amp;#10;- Down Arrow: MOVE both hands at rest&amp;#10;" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>

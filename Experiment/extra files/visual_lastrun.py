@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b12),
-    on Mon Jan 28 12:35:16 2019
+This experiment was created using PsychoPy3 Experiment Builder (v1.85.2),
+    on Fri Jan 25 16:29:38 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -26,7 +26,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '3.0.0b12'
+psychopyVersion = '1.85.2'
 expName = 'untitled'  # from the Builder filename that created this script
 expInfo = {'session': '001', 'participant': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, title=expName)
@@ -69,10 +69,10 @@ else:
 # Initialize components for Routine "Instruction"
 InstructionClock = core.Clock()
 text_2 = visual.TextStim(win=win, name='text_2',
-    text='Welcome! Please react to the cues (arrows) as follows:\n\n- Left Arrow: IMAGINE moving left hand\n- Right Arrow: IMAGINE moving right hand\n- Up Arrow: IMAGINE moving both hands\n- Down Arrow: IMAGINE both hands at rest\n',
+    text='Please Think as follows when you see a cue\n- If cue is to move left, imagine moving left hand\n- If cue is to move right, imagine moving right hand\n- If cue is to move up, imagine moving both hands\n- If cue is to move down, imagine both hands at rest\n',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
-    color='grey', colorSpace='rgb', opacity=1, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
 
@@ -154,7 +154,7 @@ for thisComponent in InstructionComponents:
         thisComponent.setAutoDraw(False)
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=15, method='random', 
+trials = data.TrialHandler(nReps=25, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('direction.xlsx'),
     seed=None, name='trials')
@@ -284,7 +284,7 @@ for thisTrial in trials:
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 15 repeats of 'trials'
+# completed 25 repeats of 'trials'
 
 
 # these shouldn't be strictly necessary (should auto-save)

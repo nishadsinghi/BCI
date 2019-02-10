@@ -1,8 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b12),
-    on Mon Jan 28 12:35:16 2019
+This experiment was created using PsychoPy2 Experiment Builder (v1.85.2),
+    on December 21, 2018, at 23:38
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -11,7 +11,7 @@ If you publish work using this script please cite the PsychoPy publications:
 """
 
 from __future__ import absolute_import, division
-from psychopy import locale_setup, sound, gui, visual, core, data, event, logging, clock
+from psychopy import locale_setup, sound, gui, visual, core, data, event, logging
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
 import numpy as np  # whole numpy lib is available, prepend 'np.'
@@ -22,19 +22,17 @@ import os  # handy system and path functions
 import sys  # to get file system encoding
 
 # Ensure that relative paths start from the same directory as this script
-_thisDir = os.path.dirname(os.path.abspath(__file__))
+_thisDir = os.path.dirname(os.path.abspath(__file__)).decode(sys.getfilesystemencoding())
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '3.0.0b12'
-expName = 'untitled'  # from the Builder filename that created this script
-expInfo = {'session': '001', 'participant': ''}
+expName = u'untitled'  # from the Builder filename that created this script
+expInfo = {u'session': u'001', u'participant': u''}
 dlg = gui.DlgFromDict(dictionary=expInfo, title=expName)
 if dlg.OK == False:
     core.quit()  # user pressed cancel
 expInfo['date'] = data.getDateStr()  # add a simple timestamp
 expInfo['expName'] = expName
-expInfo['psychopyVersion'] = psychopyVersion
 
 # Data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
 filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])
@@ -42,7 +40,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/nishadsinghi/Google Drive/BCI Project/Drone Control/Experiment/visual_lastrun.py',
+    originPath=u'F:\\BCI\\untitled.psyexp',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -55,9 +53,9 @@ endExpNow = False  # flag for 'escape' or other condition => quit the exp
 
 # Setup the Window
 win = visual.Window(
-    size=[1366, 768], fullscr=True, screen=0,
+    size=(1366, 768), fullscr=True, screen=0,
     allowGUI=False, allowStencil=False,
-    monitor='testMonitor', color='black', colorSpace='rgb',
+    monitor=u'testMonitor', color=u'black', colorSpace='rgb',
     blendMode='avg', useFBO=True)
 # store frame rate of monitor if we can measure it
 expInfo['frameRate'] = win.getActualFrameRate()
@@ -69,11 +67,10 @@ else:
 # Initialize components for Routine "Instruction"
 InstructionClock = core.Clock()
 text_2 = visual.TextStim(win=win, name='text_2',
-    text='Welcome! Please react to the cues (arrows) as follows:\n\n- Left Arrow: IMAGINE moving left hand\n- Right Arrow: IMAGINE moving right hand\n- Up Arrow: IMAGINE moving both hands\n- Down Arrow: IMAGINE both hands at rest\n',
-    font='Arial',
+    text=u'Please Think as follows when you see a cue\n- If cue is to move left, imagine moving left hand\n- If cue is to move right, imagine moving right hand\n- If cue is to move up, imagine moving both hands\n- If cue is to move down, imagine both hands at rest\n',
+    font=u'Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
-    color='grey', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
+    color=u'white', colorSpace='rgb', opacity=1,
     depth=0.0);
 
 # Initialize components for Routine "trial"
@@ -90,7 +87,7 @@ image = visual.ImageStim(
 fixationClock = core.Clock()
 image_2 = visual.ImageStim(
     win=win, name='image_2',
-    image='fixationCross.png', mask=None,
+    image=u'fixationCross.png', mask=None,
     ori=0, pos=(0, 0), size=(0.141, 0.25),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -106,7 +103,7 @@ t = 0
 InstructionClock.reset()  # clock
 frameN = -1
 continueRoutine = True
-routineTimer.add(7.000000)
+routineTimer.add(1.000000)
 # update component parameters for each repeat
 # keep track of which components have finished
 InstructionComponents = [text_2]
@@ -127,7 +124,7 @@ while continueRoutine and routineTimer.getTime() > 0:
         text_2.tStart = t
         text_2.frameNStart = frameN  # exact frame index
         text_2.setAutoDraw(True)
-    frameRemains = 0.0 + 7- win.monitorFramePeriod * 0.75  # most of one frame period left
+    frameRemains = 0.0 + 1- win.monitorFramePeriod * 0.75  # most of one frame period left
     if text_2.status == STARTED and t >= frameRemains:
         text_2.setAutoDraw(False)
     
@@ -154,7 +151,7 @@ for thisComponent in InstructionComponents:
         thisComponent.setAutoDraw(False)
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=15, method='random', 
+trials = data.TrialHandler(nReps=10, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('direction.xlsx'),
     seed=None, name='trials')
@@ -162,22 +159,22 @@ thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
 # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
 if thisTrial != None:
-    for paramName in thisTrial:
-        exec('{} = thisTrial[paramName]'.format(paramName))
+    for paramName in thisTrial.keys():
+        exec(paramName + '= thisTrial.' + paramName)
 
 for thisTrial in trials:
     currentLoop = trials
     # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
     if thisTrial != None:
-        for paramName in thisTrial:
-            exec('{} = thisTrial[paramName]'.format(paramName))
+        for paramName in thisTrial.keys():
+            exec(paramName + '= thisTrial.' + paramName)
     
     # ------Prepare to start Routine "trial"-------
     t = 0
     trialClock.reset()  # clock
     frameN = -1
     continueRoutine = True
-    routineTimer.add(4.000000)
+    routineTimer.add(3.000000)
     # update component parameters for each repeat
     image.setImage(Direction)
     # keep track of which components have finished
@@ -199,7 +196,7 @@ for thisTrial in trials:
             image.tStart = t
             image.frameNStart = frameN  # exact frame index
             image.setAutoDraw(True)
-        frameRemains = 0.0 + 4- win.monitorFramePeriod * 0.75  # most of one frame period left
+        frameRemains = 0.0 + 3- win.monitorFramePeriod * 0.75  # most of one frame period left
         if image.status == STARTED and t >= frameRemains:
             image.setAutoDraw(False)
         
@@ -232,7 +229,7 @@ for thisTrial in trials:
     continueRoutine = True
     # update component parameters for each repeat
     import random
-    time = random.random()*0.5 + 3
+    time = random.random()*0.5 + 2
     
     # keep track of which components have finished
     fixationComponents = [image_2]
@@ -284,7 +281,7 @@ for thisTrial in trials:
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 15 repeats of 'trials'
+# completed 10 repeats of 'trials'
 
 
 # these shouldn't be strictly necessary (should auto-save)

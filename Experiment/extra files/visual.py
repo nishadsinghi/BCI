@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b12),
-    on Mon Jan 28 12:35:16 2019
+This experiment was created using PsychoPy3 Experiment Builder (v1.85.2),
+    on Wed Jan 23 10:21:21 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -21,12 +21,19 @@ from numpy.random import random, randint, normal, shuffle
 import os  # handy system and path functions
 import sys  # to get file system encoding
 
+try:
+    from ctypes import windll
+    global io
+    io = windll.dlportio # requires dlportio.dll !!!
+    print('Parallel port open\n')except:
+    print('The parallel port couldn\'t be opened\n')
+
 # Ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '3.0.0b12'
+psychopyVersion = '1.85.2'
 expName = 'untitled'  # from the Builder filename that created this script
 expInfo = {'session': '001', 'participant': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, title=expName)
@@ -42,7 +49,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/nishadsinghi/Google Drive/BCI Project/Drone Control/Experiment/visual_lastrun.py',
+    originPath='/Users/nishadsinghi/Google Drive/BCI Project/Drone Control/Experiment/visual.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -69,10 +76,10 @@ else:
 # Initialize components for Routine "Instruction"
 InstructionClock = core.Clock()
 text_2 = visual.TextStim(win=win, name='text_2',
-    text='Welcome! Please react to the cues (arrows) as follows:\n\n- Left Arrow: IMAGINE moving left hand\n- Right Arrow: IMAGINE moving right hand\n- Up Arrow: IMAGINE moving both hands\n- Down Arrow: IMAGINE both hands at rest\n',
+    text='Please Think as follows when you see a cue\n- If cue is to move left, imagine moving left hand\n- If cue is to move right, imagine moving right hand\n- If cue is to move up, imagine moving both hands\n- If cue is to move down, imagine both hands at rest\n',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
-    color='grey', colorSpace='rgb', opacity=1, 
+    color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
 
@@ -106,7 +113,7 @@ t = 0
 InstructionClock.reset()  # clock
 frameN = -1
 continueRoutine = True
-routineTimer.add(7.000000)
+routineTimer.add(1.000000)
 # update component parameters for each repeat
 # keep track of which components have finished
 InstructionComponents = [text_2]
@@ -127,7 +134,7 @@ while continueRoutine and routineTimer.getTime() > 0:
         text_2.tStart = t
         text_2.frameNStart = frameN  # exact frame index
         text_2.setAutoDraw(True)
-    frameRemains = 0.0 + 7- win.monitorFramePeriod * 0.75  # most of one frame period left
+    frameRemains = 0.0 + 1- win.monitorFramePeriod * 0.75  # most of one frame period left
     if text_2.status == STARTED and t >= frameRemains:
         text_2.setAutoDraw(False)
     
@@ -154,7 +161,7 @@ for thisComponent in InstructionComponents:
         thisComponent.setAutoDraw(False)
 
 # set up handler to look after randomisation of conditions etc
-trials = data.TrialHandler(nReps=15, method='random', 
+trials = data.TrialHandler(nReps=10, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('direction.xlsx'),
     seed=None, name='trials')
@@ -171,13 +178,25 @@ for thisTrial in trials:
     if thisTrial != None:
         for paramName in thisTrial:
             exec('{} = thisTrial[paramName]'.format(paramName))
-    
+
+    try:
+        if Direction == 'Left.png':            windll.inpout32.Out32(0x0000D100, 0)            print ('Trigger Left')
+        elif Direction == 'Right.png':
+            windll.inpout32.Out32(0x0000D100, 1)
+            print ('Trigger Right')
+        elif Direction == 'Up.png':
+            windll.inpout32.Out32(0x0000D100, 2)
+            print ('Trigger Up')
+        else:
+            windll.inpout32.Out32(0x0000D100, 3)
+            print ('Trigger Down')        
+        win.flip()        core.wait(0.01) # Change this        windll.inpout32.Out32(0x0000D100, 0)    except:        print ('Trigger', Direction)        print('Error sending trigger') 
     # ------Prepare to start Routine "trial"-------
     t = 0
     trialClock.reset()  # clock
     frameN = -1
     continueRoutine = True
-    routineTimer.add(4.000000)
+    routineTimer.add(3.000000)
     # update component parameters for each repeat
     image.setImage(Direction)
     # keep track of which components have finished
@@ -199,7 +218,8 @@ for thisTrial in trials:
             image.tStart = t
             image.frameNStart = frameN  # exact frame index
             image.setAutoDraw(True)
-        frameRemains = 0.0 + 4- win.monitorFramePeriod * 0.75  # most of one frame period left
+        frameRemains = 0.0 + 3- win.monitorFramePeriod * 0.75  # most of one frame period 
+        
         if image.status == STARTED and t >= frameRemains:
             image.setAutoDraw(False)
         
@@ -232,7 +252,7 @@ for thisTrial in trials:
     continueRoutine = True
     # update component parameters for each repeat
     import random
-    time = random.random()*0.5 + 3
+    time = random.random()*0.5 + 2
     
     # keep track of which components have finished
     fixationComponents = [image_2]
@@ -284,7 +304,7 @@ for thisTrial in trials:
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 15 repeats of 'trials'
+# completed 10 repeats of 'trials'
 
 
 # these shouldn't be strictly necessary (should auto-save)
